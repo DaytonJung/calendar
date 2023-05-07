@@ -1,0 +1,29 @@
+<!--this is the html image that will be rendered by the index function in app.py-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tasks</h1>
+    
+    {% for task in tasks %}
+        <li> {{ task }} </li>
+    {% endfor %}
+
+    <form method="POST">
+        {{ taskForm.hidden_tag() }}
+        <p>
+            <!-- taskForm is the class passed in at render then .task is the classes StringField and .label is the text we assigned it -->
+            {{ taskForm.task.label }}
+            {{ taskForm.task() }}
+        </p>
+        <p>
+            {{ taskForm.submit() }}
+        </p>
+    </form>
+
+</body>
+</html>
