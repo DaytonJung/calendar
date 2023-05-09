@@ -15,7 +15,7 @@ check off tasks
 task class
     set task types (reacuring, scheudles )
     due date, start date, priority, repeat, have folders/topics
-Use Git for version control
+-Use Git for version control
 store tasks
     database
     to do, in progress, done, invisbile done, reacurring
