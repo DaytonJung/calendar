@@ -1,3 +1,8 @@
+# Create conda env "conda env create -f environment.yml" followed by "conda init"
+# Activate env "conda activate calendar-tracker"
+# Deactivate env "conda deactivate"
+# Export current conda env "conda env export --from-history > environment.yml"
+
 name: calendar-tracker
 channels:
   - conda-forge
@@ -6,3 +11,7 @@ dependencies:
   - python=3.11
   - fastapi
   - uvicorn
+  - pip
+
+
+  - pip:
