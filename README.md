@@ -55,6 +55,7 @@ Right now, I’m setting up the project structure and core systems. You can chec
 
 ---
 
+```
 calendar-tracker/
 ├── backend/
 │   ├── app/
@@ -92,7 +93,7 @@ calendar-tracker/
 └── issue_templates/
     ├── feature_request.md
     └── bug_report.md
-
+```
 ---
 
 ## 📌 Roadmap
