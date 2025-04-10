@@ -13,5 +13,8 @@ dependencies:
   - uvicorn
   - pip
 
-
   - pip:
+    - sqlalchemy
+
+variables:
+  DATABASE_URL: "postgresql://Dayton:931554@localhost:5432/calendarapp_db"
