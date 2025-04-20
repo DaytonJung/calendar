@@ -16,15 +16,19 @@ class Settings(BaseSettings):
     POSTGRES_USER: str
     POSTGRES_PASSWORD: str
 
-
-    
     model_config = SettingsConfigDict(
         env_file='../.env', 
         env_ignore_empty=True,
         extra='ignore'
         )
 
+    # Database URL
+    @computed_field
+    @property
+    def db_url(self) -> str:
+        return (
+            f"postgresql://{self.postgres_user}:{self.postgres_password}"
+            f"@{self.postgres_server}:{self.postgres_port}/{self.postgres_db}"
+        )
 
 settings = Settings()
-
-print(f"Project Name: {settings.PROJECT_NAME}")
