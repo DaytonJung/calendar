@@ -1,18 +1,18 @@
 from fastapi import FastAPI, Depends
 import uvicorn
 from sqlalchemy.orm import Session
-from db.session import SessionLocal, engine
+from backend.db.session import get_db
 
 #To start local route "uvicorn backend.main:app --reload"
 #To view docs and redoc "{IP}/doc or {IP}/redoc"
 
 app = FastAPI()
 
+
+#Test routes
 @app.get("/ping")
 def read_ping():
     return {"message": "pong"}
-
-get_db = SessionLocal
 
 @app.get("/ping-db")
 def ping_db(db: Session = Depends(get_db)):

@@ -12,11 +12,11 @@ dependencies:
   - fastapi
   - uvicorn
   - python-dotenv
-  - psycopg2
   - pydantic_settings
   - sqlalchemy
   - pydantic
   - pip
 
   - pip:
+    - psycopg2
 
