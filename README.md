@@ -85,8 +85,7 @@ calendar-tracker/
 │   ├── setup.md
 │   └── ideas.md
 │
-├── .gitignore
-├── .env.example                # Example for required env vars
+├── .gitignore               
 ├── LICENSE
 ├── README.md
 ├── environment.yml            # Conda environment file
@@ -94,20 +93,6 @@ calendar-tracker/
     ├── feature_request.md
     └── bug_report.md
 ```
----
-
-## 📌 Roadmap
-
-- [ ] Set up GitHub repo and README
-- [ ] Scaffold backend with FastAPI
-- [ ] Connect PostgreSQL and create models
-- [ ] Set up Vue frontend
-- [ ] Create CRUD API for tasks and events
-- [ ] Display tasks and calendar in UI
-- [ ] Integrate Google Calendar
-- [ ] Prototype Apple Reminders integration
-- [ ] Combine sources into unified dashboard
-
 ---
 
 ## 📝 Contributions & Feedback
